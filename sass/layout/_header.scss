@@ -1,0 +1,63 @@
+.header{
+    height: 95vh;
+    position: relative;
+
+    &__slider-1{ 
+        background-image:linear-gradient(to right bottom,rgba($primary-light,0.5),rgba($primary-dark,0.5)), url(img/header-image-1-medium.jpg);
+        @include  slider;
+        animation: fade1 10s infinite;  
+    }
+    &__slider-2{ 
+        background-image:linear-gradient(to right bottom,rgba($primary-light,0.5),rgba($primary-dark,0.5)), url(img/header-image-2-medium.jpg);
+        @include  slider; 
+        animation: fade2 10s infinite;
+    }
+    &__slider-3{
+        background-image:linear-gradient(to right bottom,rgba($primary-light,0.5),rgba($primary-dark,0.5)), url(img/header-image-3-medium.jpg);
+        @include  slider; 
+        animation: fade3 10s infinite;
+    }
+    &__slider-4{
+        background-image:linear-gradient(to right bottom,rgba($primary-light,0.5),rgba($primary-dark,0.5)), url(img/header-image-4-medium.jpg);
+        @include  slider; 
+        animation: fade4 10s infinite;
+    }
+    &__logo-box{
+        position:absolute;
+        top:20%;
+        @include center;
+    }
+    &__logo{
+        height:25rem;
+    }
+    &__title-box{
+        position: absolute;
+        color: $white;
+        top:45%;
+        @include center;
+    }
+    &__title-heading{
+        font-size: 8rem;
+        width:50%;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+    &__title-text{
+        font-size:2.5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+    &__btn-box{
+        position: absolute;
+        color: $white;
+        top:70%;
+        @include center; 
+
+    }
+
+
+
+
+}

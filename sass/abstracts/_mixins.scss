@@ -1,0 +1,15 @@
+@mixin slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: top; 
+}
+
+@mixin center {
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}

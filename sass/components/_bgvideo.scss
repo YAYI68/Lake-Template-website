@@ -1,0 +1,25 @@
+.bgvideo{
+    height:70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;       
+    }
+    &__overlay{
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color:$primary-light; 
+        z-index: 2;
+        opacity: 0.5;
+    }
+
+}

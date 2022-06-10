@@ -1,0 +1,105 @@
+.form{
+
+    &__group{
+        margin-bottom: 3rem;
+        
+    }
+
+    &__input{
+        width:100%;
+        padding: 1rem;
+        font-size:2rem;
+        border-radius: 0.8rem;
+        border: none;
+        background-color:$grey-dark-2 ;
+        color: $grey-dark;
+       
+
+        &:focus{
+            outline: none;
+            border-bottom: 3px solid $primary-dark;
+            box-shadow: 0 1rem 2rem rgba($black,0.5);
+        }
+
+        &:invalid{
+            border-bottom: 2px solid red;
+        }
+    
+             
+    }
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    &__label{
+        font-size:2rem;
+        color: $white;
+        margin-left: 3rem;
+        opacity: 1;
+        transition: opacity 0.7s;
+    }
+
+
+    &__radio{
+        display: inline-block;
+        margin-bottom: 3rem;
+        
+        &_input:checked + &_label &_button::after{
+            opacity: 1;
+        }
+        &_input{
+            display: none;
+        }
+
+        &_label{
+            font-size:2.5rem;
+            color: $white;
+            text-transform: capitalize;
+            width:30%;
+            position: relative;
+            display:block;
+            cursor: pointer;
+            padding-left: 5rem;
+        }
+        &_button{
+            background-image: url(img/golf-ball-texture-small.jpg);
+            height:3rem;
+            width:3rem;
+            border-radius:50%;
+            position: absolute;
+            display: inline-block;
+            top:.4rem;
+            left:0;
+
+            &::after{
+                content:"";
+                height:1.5rem;
+                width: 1.5rem;
+                border-radius: 50%;
+                background-color: $primary-light;
+                position: absolute;
+                top: 50%;
+                @include center;
+                opacity: 0;
+                transition:opacity 0.3s;
+            }
+
+
+        }
+
+    }
+    &__textarea{
+        background-color:$grey-dark-2 ;
+        width:100%;
+        border:none;
+        font-size:1.6rem;
+        opacity: .6;
+
+        &:focus{
+            outline:none;
+        }
+    }
+    
+   
+}

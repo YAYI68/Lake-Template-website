@@ -1,0 +1,56 @@
+.testimonial{
+    width:40%;
+    background-color:rgba($white, 0.6);
+    box-shadow: 0 1.5rem  rgba($black,0.4);
+    border-radius: 2rem;
+    display: inline-block;
+    overflow: hidden;
+
+    &__figure{
+        width: 15rem;
+        height:15rem;
+        position:relative;
+        float:left;
+        clip-path: circle( 95% at 3% 8%);
+        shape-outside: circle(100% at 3% 8%);
+        position: relative;
+        transform: translate(-10%, -10%);
+    }
+    &__img{
+      height: 100%;  
+      transform:scale(1.4);
+      transition: all 0.4s;
+    }
+    &:hover &__img{
+        transform:scale(1);
+        filter: blur(3px) brightness(70%);
+    }
+    &_text{
+       padding: 3rem; 
+    }
+    &_para{
+        font-size:1.6rem;
+    }
+    &_caption{
+        position:absolute;
+        top:70%;
+        @include center;
+        font-size: 1.5rem;
+        color:$white;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &-2{
+        float:right;
+        margin-right:3rem;
+        margin-top: 13rem;
+    }
+    &:hover &_caption{
+        top:50%;
+        opacity: 1;
+    }
+
+
+
+}

@@ -1,0 +1,29 @@
+.heading-primary{
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 4rem 30rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,rgba($primary-light,.7),rgba($secondary-light,.7));
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: all 0.5s;
+
+    &:hover{
+        transform:scale(1.2) skewX(1deg) skewY(2deg);
+    }
+    
+}
+.heading{
+    margin-bottom: 2rem;
+    color: $grey-dark;
+    width: 80%;
+    &__tertiary{
+        font-size:$default-font-size;
+        text-transform:uppercase;
+        font-weight:700;
+    }
+    &__paragraph{
+        font-size:$default-font-size;
+        font-weight:400;
+    }
+}
